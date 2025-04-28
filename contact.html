@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Fertilab</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <!-- Espacio para el logo -->
+                <div class="logo-placeholder">
+                    <span>FERTILAB</span>
+                </div>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Contacto</h1>
+            <p>Estamos aquí para atenderte</p>
+        </div>
+    </section>
+
+    <section class="contact-main">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Información de Contacto</h2>
+                    <p>Estamos disponibles para responder a tus preguntas, programar citas o proporcionar información sobre nuestros servicios.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h3>Dirección</h3>
+                                <p>Av. Principal #123, Ciudad</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <h3>Teléfono</h3>
+                                <p>+123 456 7890</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h3>Email</h3>
+                                <p>info@fertilab.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h3>Horario</h3>
+                                <p>Lunes a Viernes: 7:00 - 19:00</p>
+                                <p>Sábados: 8:00 - 14:00</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-media">
+                        <h3>Síguenos</h3>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <h2>Envíanos un Mensaje</h2>
+                    <p>Completa el formulario a continuación y nos pondremos en contacto contigo a la brevedad.</p>
+                    
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Nombre completo</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Correo electrónico</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Teléfono</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="service">Servicio de interés</label>
+                                <select id="service" name="service">
+                                    <option value="" disabled selected>Selecciona un servicio</option>
+                                    <option value="analisis-rutina">Análisis de Rutina</option>
+                                    <option value="estudios-especializados">Estudios Especializados</option>
+                                    <option value="microbiologia">Microbiología</option>
+                                    <option value="pruebas-alergia">Pruebas de Alergia</option>
+                                    <option value="pruebas-prenatales">Pruebas Prenatales</option>
+                                    <option value="servicio-domicilio">Servicio a Domicilio</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensaje</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <div class="form-group form-checkbox">
+                            <input type="checkbox" id="privacy" name="privacy" required>
+                            <label for="privacy">Acepto la política de privacidad y el tratamiento de mis datos personales.</label>
+                        </div>
+                        <button type="submit" class="btn-primary">Enviar mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="map-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nuestra Ubicación</h2>
+                <p>Encuéntranos fácilmente</p>
+            </div>
+            <div class="map-container">
+                <!-- Aquí iría un mapa interactivo, por ejemplo con Google Maps -->
+                <div class="map-placeholder">
+                    <img src="img/map.jpg" alt="Mapa de ubicación">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Preguntas Frecuentes</h2>
+                <p>Respuestas a las dudas más comunes</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Necesito cita previa para realizarme análisis?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Para la mayoría de los análisis no es necesario cita previa, pero recomendamos llamar con anticipación para evitar tiempos de espera, especialmente en horas pico. Para estudios especializados sí es recomendable agendar una cita.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Cuánto tiempo tardan en entregar los resultados?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>El tiempo de entrega varía según el tipo de análisis. Los estudios de rutina suelen estar listos en 24 horas, mientras que los estudios especializados pueden tomar de 3 a 5 días hábiles. Al momento de la toma de muestra, se te informará el tiempo exacto de entrega.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Ofrecen servicio a domicilio en toda la ciudad?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sí, ofrecemos servicio a domicilio en toda el área metropolitana. Para zonas más alejadas, por favor contáctanos para verificar disponibilidad y posibles costos adicionales.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Cómo debo prepararme para mis análisis?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>La preparación varía según el tipo de análisis. Para la mayoría de los análisis de sangre se requiere ayuno de 8-12 horas. Al agendar tu cita o consulta, te proporcionaremos instrucciones específicas para tu tipo de estudio.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Aceptan seguros médicos?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sí, trabajamos con las principales aseguradoras médicas. Te recomendamos verificar con nosotros si tu seguro específico tiene cobertura y qué estudios están incluidos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo-placeholder">
+                        <span>FERTILAB</span>
+                    </div>
+                    <p>Laboratorio de Análisis Clínicos</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Enlaces rápidos</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h3>Servicios</h3>
+                    <ul>
+                        <li><a href="services.html#analisis-rutina">Análisis de Rutina</a></li>
+                        <li><a href="services.html#estudios-especializados">Estudios Especializados</a></li>
+                        <li><a href="services.html#microbiologia">Microbiología</a></li>
+                        <li><a href="services.html#pruebas-alergia">Pruebas de Alergia</a></li>
+                        <li><a href="services.html#pruebas-prenatales">Pruebas Prenatales</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Suscríbete</h3>
+                    <p>Recibe nuestras últimas noticias y promociones</p>
+                    <form id="newsletterForm">
+                        <input type="email" placeholder="Tu correo electrónico" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Fertilab. Todos los derechos reservados.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Política de privacidad</a>
+                    <a href="#">Términos y condiciones</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

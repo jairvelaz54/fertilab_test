@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const header = document.querySelector('header');
     const contactForm = document.getElementById('contactForm');
     const newsletterForm = document.getElementById('newsletterForm');
+    const faqItems = document.querySelectorAll('.faq-item');
 
     // Toggle menu on hamburger click
     if (hamburger) {
@@ -33,30 +34,24 @@ document.addEventListener('DOMContentLoaded', function() {
             header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
         }
     });
-
-    // Active menu item based on scroll position
-    const sections = document.querySelectorAll('section');
-    const navItems = document.querySelectorAll('.menu a');
-
-    window.addEventListener('scroll', function() {
-        let current = '';
-        
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop;
-            const sectionHeight = section.clientHeight;
-            
-            if (pageYOffset >= (sectionTop - 200)) {
-                current = section.getAttribute('id');
-            }
+    
+    // FAQ toggle
+    if (faqItems.length > 0) {
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            question.addEventListener('click', () => {
+                // Close all other items
+                faqItems.forEach(otherItem => {
+                    if (otherItem !== item) {
+                        otherItem.classList.remove('active');
+                    }
+                });
+                
+                // Toggle current item
+                item.classList.toggle('active');
+            });
         });
-
-        navItems.forEach(item => {
-            item.classList.remove('active');
-            if (item.getAttribute('href').substring(1) === current) {
-                item.classList.add('active');
-            }
-        });
-    });
+    }
 
     // Contact form submission
     if (contactForm) {
